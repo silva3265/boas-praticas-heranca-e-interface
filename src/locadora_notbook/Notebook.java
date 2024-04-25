@@ -1,4 +1,4 @@
-package locadora;
+package locadora_notbook; 
 
 public class Notebook {
 
