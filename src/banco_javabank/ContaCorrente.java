@@ -23,7 +23,6 @@ public class ContaCorrente implements Conta {
     public void transferir(Conta conta, double valor) {
 //        this.saldo -= valor;
         sacar(valor);
-        sacarTarifa(15);
         conta.depositar(valor);
     }
 
@@ -31,10 +30,6 @@ public class ContaCorrente implements Conta {
     public void aplicarEmInvestimento(double valor) {
         this.saldo -= valor;
         // TODO aqui aplicaria o dinheiro no investimento
-    }
-
-    public void sacarTarifa(double valorTarifa) {
-        this.saldo -= valorTarifa;
     }
 
 }
