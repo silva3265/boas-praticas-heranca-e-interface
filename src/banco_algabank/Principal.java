@@ -6,7 +6,7 @@ import banco_javabank.ContaCorrente;
 public class Principal {
 
     public static void main(String[] args) {
-        Conta conta1 = new ContaCorrenteComTributacao();
+        Conta conta1 = new ContaComTributacao(new ContaCorrente());
         Conta conta2 = new ContaCorrente();
 
         conta1.depositar(1000);

@@ -2,10 +2,14 @@ package banco_javabank;
 
 public interface Conta {
 
-    double getSaldo();
-    void sacar(double valor);
-    void depositar(double valor);
-    void transferir(Conta conta, double valor);
-    void aplicarEmInvestimento(double valor);
+	double getSaldo();
+
+	void sacar(double valor);
+
+	void depositar(double valor);
+
+	void transferir(Conta conta, double valor);
+
+	void aplicarEmInvestimento(double valor);
 
 }
